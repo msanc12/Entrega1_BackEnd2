@@ -1,3 +1,4 @@
+import bcrypt from 'bcrypt';
 import { use, serializeUser, deserializeUser } from 'passport';
 import { Strategy as LocalStrategy } from 'passport-local';
 import { Strategy as JwtStrategy, ExtractJwt } from 'passport-jwt';

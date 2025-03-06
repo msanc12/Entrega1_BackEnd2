@@ -1,7 +1,8 @@
 import { Router } from 'express';
-import { authenticate } from 'passport';
-import { sign } from 'jsonwebtoken';
-//import User from '../models/User.js';
+import passport from 'passport';
+const { authenticate } = passport;
+import pkg from 'jsonwebtoken';
+const { sign } = pkg;
 import User from '../models/User.js';
 
 const router = Router();
